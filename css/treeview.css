@@ -1,0 +1,21 @@
+.colunaEsquerda {}
+
+/* Etiquetas */
+.treeview {
+	width: 100%;
+}
+
+.treeview ul {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.treeview li {
+	list-style: none;
+}
+
+.treeview span {
+	border-bottom: 1px solid #ddd;
+	display: block;
+	padding: 10px 12px;
+}
