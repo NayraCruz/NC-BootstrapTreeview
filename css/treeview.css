@@ -14,17 +14,21 @@
 	list-style: none;
 }
 
+.treeview .smoothHover {
+	transition: background .2s ease;
+}
+
 .treeview span.item {
 	border-bottom: 1px solid #ddd;
 	display: block;
-	padding: 10px 12px;
+	padding: 10px 5px;
 	color: #058ec4;
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 }
 
 .treeview span.indent {
-	margin: 0 10px;
+	margin: 0 7px;
 }
 
 .treeview button {
@@ -34,6 +38,22 @@
 .treeview button.openClose, .treeview span.noButton {
 	width: 27px;
 	height: 26px;
+}
+
+.treeview button.openClose {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+}
+
+.treeview button.openClose:hover {
+	background-color: #efefef;
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+}
+
+.treeview button.openClose:focus {
+	outline: none;
 }
 
 .treeview span.noButton {
