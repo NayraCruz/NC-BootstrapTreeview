@@ -1,5 +1,7 @@
-/* Etiquetas */
 $(document).ready( function () {
+	/* -------------
+			Etiquetas
+	---------------- */
 	$('.treeview li:has(ul)').addClass('parent_li').find(' > span > button.openClose').attr('title', 'Recolher Etiqueta');
 	$('.treeview li.parent_li > span > button.openClose').on('click', function(e) {
 		var tag = $(this).parent();
@@ -14,4 +16,17 @@ $(document).ready( function () {
 		}
 		e.stopPropagation();
 	});
+
+	/* ----------------------------------------
+			Ações da etiqueta - bootstrap popover
+	------------------------------------------- */
+	$( function () {
+		$('[data-toggle="popover"').popover();
+
+		/* Abre apenas um popover de cada vez */
+		$('[data-toggle="popover"').on('click', function (e) {
+			$('[data-toggle="popover"').not(this).popover('hide');
+		});
+	});
+
 });
