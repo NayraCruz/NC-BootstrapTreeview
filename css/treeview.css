@@ -14,8 +14,29 @@
 	list-style: none;
 }
 
-.treeview span {
+.treeview span.item {
 	border-bottom: 1px solid #ddd;
 	display: block;
 	padding: 10px 12px;
+	color: #058ec4;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.treeview span.indent {
+	margin: 0 10px;
+}
+
+.treeview button {
+	font-weight: normal;
+}
+
+.treeview button.openClose, .treeview span.noButton {
+	width: 27px;
+	height: 26px;
+}
+
+.treeview span.noButton {
+	display: inline-block;
+	vertical-align: middle;
 }
