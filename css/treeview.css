@@ -31,32 +31,54 @@
 	margin: 0 7px;
 }
 
+.treeview span.acoes {
+	float: right;
+}
+
 .treeview button {
 	font-weight: normal;
 }
 
-.treeview button.openClose, .treeview span.noButton {
+.treeview button.openClose, .treeview button.votacao, .treeview span.noButton {
 	width: 27px;
 	height: 26px;
 }
 
-.treeview button.openClose {
+.treeview button.openClose, .treeview button.votacao {
   background: transparent;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 4px;
+  color: #777777;
 }
 
-.treeview button.openClose:hover {
+.treeview button.votacao {
+	padding: 1px 0px 0px;
+}
+
+.treeview button:hover {
 	background-color: #efefef;
   border-radius: 4px;
   border: 1px solid #e2e2e2;
 }
 
-.treeview button.openClose:focus {
+.treeview button:focus {
 	outline: none;
 }
 
 .treeview span.noButton {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.treeview .fa-star {
+	font-size: 16px;
+	color: #fff;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #777;
+}
+
+.treeview .fa-star.marcado {
+	color: #fff600;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffa500;
 }
