@@ -21,11 +21,13 @@ $(document).ready( function () {
 			Ações da etiqueta - bootstrap popover
 	------------------------------------------- */
 	$( function () {
-		$('[data-toggle="popover"').popover();
-
-		/* Abre apenas um popover de cada vez */
-		$('[data-toggle="popover"').on('click', function (e) {
-			$('[data-toggle="popover"').not(this).popover('hide');
+		$('[data-toggle="popover"]').popover({
+			placement : 'auto right',
+			trigger: 'manual',
+			container: 'body',
+		}).click(function(e) {
+			$(this).popover('show');
+			$('[data-toggle="popover"]').not($(this)).popover('hide');
 		});
 	});
 
