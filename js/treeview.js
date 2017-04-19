@@ -28,7 +28,7 @@ $(document).ready( function () {
 			template: '<div class="popover treeviewIn" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>',
 			selector: true
 		}).click(function(e) {
-			$(this).popover('show');
+			$(this).popover('toggle');
 			popover.not($(this)).popover('hide');
 		});
 	});
