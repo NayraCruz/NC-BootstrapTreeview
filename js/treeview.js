@@ -26,7 +26,7 @@ $(document).ready( function () {
 			trigger: 'manual',
 			container: 'body',
 		}).click(function(e) {
-			$(this).popover('show');
+			$(this).popover('toggle');
 			$('[data-toggle="popover"]').not($(this)).popover('hide');
 		});
 	});

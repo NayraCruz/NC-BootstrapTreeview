@@ -37,7 +37,16 @@
                   PRECATÓRIOS
                   <span class="opcoes">
                     <button class="votacao" title="Marcar como favorito"><i class="fa fa-star"></i></button>
-                    <button class="acoes" data-toggle="popover" data-content="Ações para esta etiqueta"><i class="fa fa-ellipsis-v"></i></button>
+                    <button class="acoes" data-toggle="popover" 
+                    data-content="
+                      <ul class='acoesPopover'>
+                        <li><a href='#' role='button'>Desfavoritar</a></li>
+                        <li><a href='#' role='button'>Editar</a></li>
+                        <li><a href='#' role='button'>Excluir</a></li>
+                        <li><a href='#' role='button'>Vincular subetiqueta</a></li>
+                      </ul>
+                    " 
+                    data-html="true"><i class="fa fa-ellipsis-v"></i></button>
                   </span>                  
                 </span>
 
